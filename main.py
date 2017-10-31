@@ -4,8 +4,8 @@ from microsoftbotframework import MsBot
 from tasks import *
 import os
 
-bot = MsBot(port=int(os.environ['PORT']))
-#bot = MsBot()
+#bot = MsBot(port=int(os.environ['PORT']))
+bot = MsBot()
 bot.add_process(echo_response)
 
 if __name__ == '__main__':
