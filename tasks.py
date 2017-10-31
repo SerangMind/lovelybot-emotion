@@ -24,8 +24,11 @@ def echo_response(message):
             r = requests.get("https://api.korbit.co.kr/v1/ticker")
             bitcoin_price = r.json()["last"]
             msg = "bitcoin price is %s" % bitcoin_price
+
             print(msg)
-            #ReplyToActivity(fill=message, text=msg).send()
+
+            ReplyToActivity(fill=message, text=msg).send()
+
         else:
             data = {
                 "documents": [
@@ -55,7 +58,10 @@ def echo_response(message):
 
             print(msg)
 
-            #ReplyToActivity(fill=message, text=msg).send()
+            ReplyToActivity(fill=message, text=msg).send()
+
+
+
 
 message = { "text": "bitcoin", "type": "message" }
 echo_response(message)
