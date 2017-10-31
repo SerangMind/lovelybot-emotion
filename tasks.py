@@ -63,9 +63,9 @@ def echo_response(message):
 
 
 
-message = { "text": "bitcoin", "type": "message" }
-echo_response(message)
+#message = { "text": "bitcoin", "type": "message" }
+#echo_response(message)
 
-message = { "text": "I am happy", "type": "message" }
-echo_response(message)
+#message = { "text": "I am happy", "type": "message" }
+#echo_response(message)
 
