@@ -1,4 +1,4 @@
-__metaclass__ = type
+#__metaclass__ = type
 
 from microsoftbotframework import MsBot
 from tasks import *
