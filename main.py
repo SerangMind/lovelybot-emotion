@@ -4,7 +4,7 @@ from microsoftbotframework import MsBot
 from tasks import *
 import os
 
-bot = MsBot(port=int(os.environ['process.env.PORT']))
+bot = MsBot(port=int(os.environ['PORT']))
 #bot = MsBot(port=int(os.environ['PORT']))
 #bot = MsBot(port=5000)
 #bot = MsBot()
